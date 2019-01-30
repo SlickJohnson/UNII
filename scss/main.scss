@@ -1,7 +1,7 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(../dist/img/background.jpg);
+$home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -15,14 +15,15 @@ $background-opacity: 0.9;
       background-attachment: fixed;
       background-size: cover;
 
-      .overlay {
+      &:after {
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: rgba($primary-color, $background-opacity))
+        background: rgba($primary-color, $background-opacity);
       }
     }
   }
@@ -36,7 +37,7 @@ body {
   @include background;
   background: $primary-color;
   color: #fff;
-  height: 100;
+  height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
