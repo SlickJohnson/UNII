@@ -57,6 +57,7 @@ main {
 
     a {
       padding: 0.4rem;
+      color: set-text-color($primary-color);
 
       &:hover {
         color: $secondary-color;
@@ -78,7 +79,7 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
+    "skill1 skill2 skill3";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -93,22 +94,26 @@ main {
     font-size: 1.5rem;
   }
 
-  .job-1 {
-    grid-area: job1;
+  .skill-1 {
+    grid-area: skill1;
   }
 
-  .job-2 {
-    grid-area: job2;
+  .skill-2 {
+    grid-area: skill2;
   }
 
-  .job-3 {
-    grid-area: job3;
+  .skill-3 {
+    grid-area: skill3;
   }
 
-  .job {
+  .skill {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+
+    img {
+      width: 15%;
+    }
   }
 }
 
