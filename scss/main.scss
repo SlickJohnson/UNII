@@ -125,10 +125,10 @@ main {
 
   img {
     width: 100%;
-    border: 3px #fff solid;
+    border: 4.5px #fff solid;
 
     &:hover {
-      opacity: 0.5;
+      opacity: 0.7;
       border-color: $secondary-color;
       @include easeOut;
     }
