@@ -1,3 +1,3 @@
 # UNII
 
-Personal design page and portfolio
+Personal blog
